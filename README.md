@@ -4,3 +4,13 @@
 ```bash
 sudo apt install g++ libsdl2-dev -y
 ```
+
+## build :
+```bash
+./build.sh
+```
+
+## run :
+```bash
+./snake
+```
