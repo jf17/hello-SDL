@@ -14,3 +14,5 @@ sudo apt install g++ libsdl2-dev -y
 ```bash
 ./snake
 ```
+
+![Screenshot](/screen.png?raw=true)
