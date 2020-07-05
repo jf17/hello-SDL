@@ -74,50 +74,6 @@ pair<int, int> getFoodSpawn(vector<int> tailX, vector<int> tailY, int playerX, i
 	return foodLoc;
 }
 
-
-// void youWin(SDL_Renderer* renderer, SDL_Event event, int scale, int wScale, int tailLength) {
-// 	SDL_Color Red = { 255, 0, 0 };
-// 	SDL_Color White = { 255, 255, 255 };
-// 	SDL_Color Black = { 0, 0, 0 };
-// 	SDL_Color Yellow = { 255, 255, 0 };
-
-// 	SDL_Rect gameoverRect;
-// 	SDL_Rect retryRect;
-// 	SDL_Rect scoreRect;
-// 	gameoverRect.w = 200;
-// 	gameoverRect.h = 100;
-// 	gameoverRect.x = ((scale*wScale) / 2) - (gameoverRect.w / 2);
-// 	gameoverRect.y = ((scale*wScale) / 2) - (gameoverRect.h / 2) - 50;
-// 	retryRect.w = 300;
-// 	retryRect.h = 50;
-// 	retryRect.x = ((scale*wScale) / 2) - ((retryRect.w / 2));
-// 	retryRect.y = (((scale*wScale) / 2) - ((retryRect.h / 2)) + 150);
-// 	scoreRect.w = 100;
-// 	scoreRect.h = 30;
-// 	scoreRect.x = ((scale*wScale) / 2) - (scoreRect.w / 2);
-// 	scoreRect.y = 0;
-
-
-
-// 	while (true) {
-// 		SDL_RenderPresent(renderer);
-
-// 		if (SDL_PollEvent(&event)) {
-
-// 			if (event.type == SDL_QUIT) {
-// 				exit(0);
-// 			}
-
-// 			if (event.key.keysym.scancode == SDL_SCANCODE_RETURN) {
-// 				return;
-// 			}
-
-// 		}
-
-// 	}
-
-// }
-
 int main(int argc, char* argv[]) {
 
 	SDL_Init(SDL_INIT_EVERYTHING);
@@ -185,28 +141,6 @@ int main(int argc, char* argv[]) {
 		time = newTime;
 
 		inputThisFrame = false;
-
-		// if (tailLength >= 575) {
-		// 	youWin(renderer, event, scale, wScale, tailLength);
-		// 	x = 0;
-		// 	y = 0;
-		// 	up = false;
-		// 	left = false;
-		// 	right = false;
-		// 	down = false;
-		// 	tailX.clear();
-		// 	tailY.clear();
-		// 	tailLength = 0;
-		// 	redo = false;
-		// 	foodLoc = getFoodSpawn(tailX, tailY, x, y, scale, wScale, tailLength);
-
-		// 	if (food.x == -100 && food.y == -100) {
-		// 		redo = true;
-		// 	}
-
-		// 	food.x = foodLoc.first;
-		// 	food.y = foodLoc.second;
-		// }
 
 
 		if (SDL_PollEvent(&event)) {
