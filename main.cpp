@@ -8,16 +8,22 @@
 using namespace std;
 
 void renderPlayer(SDL_Renderer* renderer, SDL_Rect player, int x, int y, int scale, vector<int> tailX, vector<int> tailY, int tailLength) {
-	SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255);
+
+SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255); // White
+
 	player.w = scale;
 	player.h = scale;
 
 	for (int i = 0; i < tailLength; i++) {
+		
 		player.x = tailX[i];
 		player.y = tailY[i];
 		SDL_RenderFillRect(renderer, &player);
 	}
 
+
+
+SDL_SetRenderDrawColor(renderer, 255, 0, 0, 255); // RED
 	player.x = x;
 	player.y = y;
 
