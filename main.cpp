@@ -216,35 +216,35 @@ int main(int argc, char* argv[]) {
 
 			if (event.type == SDL_KEYDOWN && inputThisFrame == false) {
 
-				if (down == false && event.key.keysym.scancode == SDL_SCANCODE_UP) {
+				if (down == false && ((event.key.keysym.scancode == SDL_SCANCODE_UP) || event.key.keysym.scancode ==SDL_SCANCODE_W)) {
 					up = true;
 					left = false;
 					right = false;
 					down = false;
 					inputThisFrame = true;
 				}
-				else if (right == false && event.key.keysym.scancode == SDL_SCANCODE_LEFT) {
+				else if (right == false && ((event.key.keysym.scancode == SDL_SCANCODE_LEFT) || event.key.keysym.scancode ==SDL_SCANCODE_A)) {
 					up = false;
 					left = true;
 					right = false;
 					down = false;
 					inputThisFrame = true;
 				}
-				else if (up == false && event.key.keysym.scancode == SDL_SCANCODE_DOWN) {
+				else if (up == false && ((event.key.keysym.scancode == SDL_SCANCODE_DOWN) || event.key.keysym.scancode ==SDL_SCANCODE_S)) {
 					up = false;
 					left = false;
 					right = false;
 					down = true;
 					inputThisFrame = true;
 				}
-				else if (left == false && event.key.keysym.scancode == SDL_SCANCODE_RIGHT) {
+				else if (left == false && ((event.key.keysym.scancode == SDL_SCANCODE_RIGHT) || event.key.keysym.scancode ==SDL_SCANCODE_D)) {
 					up = false;
 					left = false;
 					right = true;
 					down = false;
 					inputThisFrame = true;
 				}
-				else if (event.key.keysym.scancode == SDL_SCANCODE_ESCAPE) {
+				else if (event.key.keysym.scancode == SDL_SCANCODE_ESCAPE || event.key.keysym.scancode ==SDL_SCANCODE_Q) {
 					running = false; // завершаем работу программы
 				}
 
