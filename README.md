@@ -2,5 +2,5 @@
 
 ## install dependencies :
 ```bash
-sudo apt install libsdl2-dev -y
+sudo apt install g++ libsdl2-dev -y
 ```
